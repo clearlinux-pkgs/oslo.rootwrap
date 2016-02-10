@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+3.2.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
+* Removes MANIFEST.in as it is not needed explicitely by PBR
+
 3.1.0
 -----
 
