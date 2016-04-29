@@ -4,7 +4,7 @@
 #
 Name     : oslo.rootwrap
 Version  : 4.1.0
-Release  : 26
+Release  : 27
 URL      : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-4.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-4.1.0.tar.gz
 Summary  : Oslo Rootwrap
