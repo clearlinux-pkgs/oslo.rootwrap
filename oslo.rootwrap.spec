@@ -4,7 +4,7 @@
 #
 Name     : oslo.rootwrap
 Version  : 4.1.0
-Release  : 28
+Release  : 29
 URL      : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-4.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-4.1.0.tar.gz
 Summary  : Oslo Rootwrap
@@ -35,6 +35,7 @@ BuildRequires : python-dev
 BuildRequires : python-mimeparse-python
 BuildRequires : python-mock-python
 BuildRequires : python3-dev
+BuildRequires : pytz-python
 BuildRequires : setuptools
 BuildRequires : six
 BuildRequires : six-python
