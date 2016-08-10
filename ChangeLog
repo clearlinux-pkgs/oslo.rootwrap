@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+5.0.0
+-----
+
+* always allow privsep-helper as a command
+* Add Python 3.5 classifier and venv
+
 4.4.0
 -----
 
