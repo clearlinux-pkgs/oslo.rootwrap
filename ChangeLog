@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+5.1.0
+-----
+
+* Fix parameters of assertEqual are misplaced
+
 5.0.0
 -----
 
