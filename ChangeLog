@@ -1,16 +1,24 @@
 CHANGES
 =======
 
+5.2.0
+-----
+
+* Update homepage with developer documentation page
+* Enhance _program() and _program_path()
+
 5.1.0
 -----
 
 * Fix parameters of assertEqual are misplaced
+* Remove discover from test-requirements
 
 5.0.0
 -----
 
 * always allow privsep-helper as a command
 * Add Python 3.5 classifier and venv
+* Add reno for release notes management
 
 4.4.0
 -----
