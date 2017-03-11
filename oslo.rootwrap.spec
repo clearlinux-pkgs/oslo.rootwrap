@@ -6,7 +6,7 @@
 #
 Name     : oslo.rootwrap
 Version  : 5.2.0
-Release  : 41
+Release  : 42
 URL      : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.2.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.2.0.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.2.0.tar.gz.asc
@@ -16,41 +16,11 @@ License  : Apache-2.0
 Requires: oslo.rootwrap-bin
 Requires: oslo.rootwrap-python
 Requires: six
-BuildRequires : Babel-python
-BuildRequires : Jinja2
-BuildRequires : Pygments
-BuildRequires : Sphinx-python
-BuildRequires : configparser-python
-BuildRequires : debtcollector-python
-BuildRequires : discover-python
-BuildRequires : docutils-python
-BuildRequires : enum34-python
-BuildRequires : eventlet-python
-BuildRequires : extras
-BuildRequires : extras-python
-BuildRequires : funcsigs-python
-BuildRequires : hacking
-BuildRequires : imagesize-python
-BuildRequires : oslosphinx-python
-BuildRequires : oslotest-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pyrsistent-python
-BuildRequires : pytest
 BuildRequires : python-dev
-BuildRequires : python-mimeparse-python
-BuildRequires : python-mock-python
 BuildRequires : python3-dev
-BuildRequires : reno-python
 BuildRequires : setuptools
-BuildRequires : six
-BuildRequires : six-python
-BuildRequires : tox
-BuildRequires : traceback2-python
-BuildRequires : unittest2-python
-BuildRequires : virtualenv
 
 %description
 ===============================================
@@ -78,17 +48,12 @@ python components for the oslo.rootwrap package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1489033781
+export SOURCE_DATE_EPOCH=1489273489
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
-%check
-export http_proxy=http://127.0.0.1:9/
-export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost,127.0.0.1,0.0.0.0
-PYTHONPATH=%{buildroot}/usr/lib/python2.7/site-packages python2 setup.py test || :
 %install
-export SOURCE_DATE_EPOCH=1489033781
+export SOURCE_DATE_EPOCH=1489273489
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
