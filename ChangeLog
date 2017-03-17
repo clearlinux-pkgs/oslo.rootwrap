@@ -1,6 +1,41 @@
 CHANGES
 =======
 
+5.6.0
+-----
+
+
+5.5.0
+-----
+
+* Updated from global requirements
+* [Fix gate]Update test requirement
+* Allow rootwrap-daemon to timeout and exit
+* Don't open subdirectories rootwrap filter directories
+* Avoid importing Linux specific modules on Windows
+* Always check cmd which does not exist
+* Updated from global requirements
+* Remove support for py34
+* pbr.version.VersionInfo needs package name (oslo.xyz and not oslo_xyz)
+* [daemon] Close inherited filedescriptors after forking
+* Update reno for stable/ocata
+
+5.4.0
+-----
+
+* Relax default strict option under python3.x for configparser
+* Add Constraints support
+* Show team and repo badges on README
+
+5.3.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
+* [TrivialFix] Replace 'assertFalse(a in b)' with 'assertNotIn(a, b)'
+* Fix running unknown commands in daemon mode
+* Enable release notes translation
+
 5.2.0
 -----
 
