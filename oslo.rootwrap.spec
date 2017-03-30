@@ -6,7 +6,7 @@
 #
 Name     : oslo.rootwrap
 Version  : 5.6.0
-Release  : 43
+Release  : 44
 URL      : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.6.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.6.0.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.6.0.tar.gz.asc
@@ -50,15 +50,18 @@ python components for the oslo.rootwrap package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1489784874
+export SOURCE_DATE_EPOCH=1490884250
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1489784874
+export SOURCE_DATE_EPOCH=1490884250
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+echo ----[ mark ]----
+cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
+echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
@@ -70,5 +73,4 @@ python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files python
 %defattr(-,root,root,-)
-/usr/lib/python2*/*
-/usr/lib/python3*/*
+/usr/lib/python*/*
