@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+5.7.0
+-----
+
+* Trivial: Remove testscenarios from test-requirements.txt
+
 5.6.0
 -----
 
