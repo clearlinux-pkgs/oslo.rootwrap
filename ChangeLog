@@ -1,6 +1,78 @@
 CHANGES
 =======
 
+5.14.1
+------
+
+* Make IpNetnsExecFilter more strict to detect aliases
+* Remove stale pip-missing-reqs tox test
+* Trivial: Update pypi url to new url
+
+5.14.0
+------
+
+* set default python to python3
+* fix lower constraints and uncap eventlet
+* Update to support running benchmark on python3
+* add lower-constraints job
+* Updated from global requirements
+* Update links in README
+* Update reno for stable/queens
+* Updated from global requirements
+* Updated from global requirements
+* Treat doc warnings as errors
+
+5.13.0
+------
+
+* Updated from global requirements
+* Follow the new PTI for document build
+* Add bandit to pep8 job
+
+5.12.1
+------
+
+
+5.12.0
+------
+
+* Remove -U from pip install
+* Avoid tox\_install.sh for constraints support
+* Ignore syslog settings if /dev/log is not present
+* Remove setting of version/release from releasenotes
+* Updated from global requirements
+
+5.11.0
+------
+
+* Protect rootwrap daemon socket against multiple threads
+* Cleanup test-requirements
+* Updated from global requirements
+
+5.10.0
+------
+
+* Updated from global requirements
+* Fix test\_daemon\_no\_cleanup\_for\_uninitialized\_server
+* Update reno for stable/pike
+* Updated from global requirements
+
+5.9.0
+-----
+
+* Update URLs in documents according to document migration
+
+5.8.0
+-----
+
+* rearrange existing documentation to fit the new standard layout
+* Switch from oslosphinx to openstackdocstheme
+* Updated from global requirements
+* Remove pbr warnerrors in favor of sphinx check
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+
 5.7.0
 -----
 
@@ -21,7 +93,7 @@ CHANGES
 * Always check cmd which does not exist
 * Updated from global requirements
 * Remove support for py34
-* pbr.version.VersionInfo needs package name (oslo.xyz and not oslo_xyz)
+* pbr.version.VersionInfo needs package name (oslo.xyz and not oslo\_xyz)
 * [daemon] Close inherited filedescriptors after forking
 * Update reno for stable/ocata
 
@@ -45,7 +117,7 @@ CHANGES
 -----
 
 * Update homepage with developer documentation page
-* Enhance _program() and _program_path()
+* Enhance \_program() and \_program\_path()
 
 5.1.0
 -----
@@ -158,9 +230,9 @@ CHANGES
 1.8.0
 -----
 
-* Remove run_cross_tests.sh
+* Remove run\_cross\_tests.sh
 * Updated from global requirements
-* Remove mentions of root "tests" package from test_funcional_*
+* Remove mentions of root "tests" package from test\_funcional\_\*
 * Generate a oslo-rootwrap console script
 
 1.7.0
@@ -187,7 +259,7 @@ CHANGES
 * Add cross-testing script
 * Updated from global requirements
 * Move files out of the namespace package
-* Activate pep8 check that _ is imported
+* Activate pep8 check that \_ is imported
 * Workflow documentation is now in infra-manual
 
 1.4.0
@@ -243,14 +315,14 @@ CHANGES
 * Avoid matching ip -s netns exec in IpFilter
 * Don't use system pip things in tox
 * Add Python 3 trove classifiers
-* To honor RFC5424 add use_syslog_rfc_format config option
+* To honor RFC5424 add use\_syslog\_rfc\_format config option
 * Trivial changes from oslo-incubator
 
 1.1.0
 -----
 
 * Discontinue usage of oslo-rootwrap
-* Add missing oslo/__init__.py
+* Add missing oslo/\_\_init\_\_.py
 * Fix spelling errors in comments
 
 1.0.0
@@ -279,7 +351,7 @@ CHANGES
 * Enable hacking H402 test
 * Update KillFilter to stop at '\0' for readlink() function
 * Stylistic improvements from quantum-rootwrap
-* Use print_function __future__ import
+* Use print\_function \_\_future\_\_ import
 * Revert common logging use in rootwrap
 * Improve Python 3.x compatibility
 * Replaces standard logging with common logging
