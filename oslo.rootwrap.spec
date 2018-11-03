@@ -6,17 +6,17 @@
 #
 Name     : oslo.rootwrap
 Version  : 5.14.1
-Release  : 48
+Release  : 49
 URL      : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.14.1.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.14.1.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.14.1.tar.gz.asc
 Summary  : Oslo Rootwrap
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: oslo.rootwrap-bin
-Requires: oslo.rootwrap-python3
-Requires: oslo.rootwrap-license
-Requires: oslo.rootwrap-python
+Requires: oslo.rootwrap-bin = %{version}-%{release}
+Requires: oslo.rootwrap-license = %{version}-%{release}
+Requires: oslo.rootwrap-python = %{version}-%{release}
+Requires: oslo.rootwrap-python3 = %{version}-%{release}
 Requires: Sphinx
 Requires: fixtures
 Requires: openstackdocstheme
@@ -25,9 +25,6 @@ Requires: reno
 Requires: six
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
-BuildRequires : pip
-BuildRequires : python3-dev
-BuildRequires : setuptools
 
 %description
 Team and repository tags
@@ -36,7 +33,7 @@ Team and repository tags
 %package bin
 Summary: bin components for the oslo.rootwrap package.
 Group: Binaries
-Requires: oslo.rootwrap-license
+Requires: oslo.rootwrap-license = %{version}-%{release}
 
 %description bin
 bin components for the oslo.rootwrap package.
@@ -53,7 +50,7 @@ license components for the oslo.rootwrap package.
 %package python
 Summary: python components for the oslo.rootwrap package.
 Group: Default
-Requires: oslo.rootwrap-python3
+Requires: oslo.rootwrap-python3 = %{version}-%{release}
 
 %description python
 python components for the oslo.rootwrap package.
@@ -76,14 +73,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532376912
-python3 setup.py build -b py3
+export SOURCE_DATE_EPOCH=1541270899
+python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/oslo.rootwrap
-cp LICENSE %{buildroot}/usr/share/doc/oslo.rootwrap/LICENSE
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/oslo.rootwrap
+cp LICENSE %{buildroot}/usr/share/package-licenses/oslo.rootwrap/LICENSE
+python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -97,8 +94,8 @@ echo ----[ mark ]----
 /usr/bin/oslo-rootwrap-daemon
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/oslo.rootwrap/LICENSE
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/oslo.rootwrap/LICENSE
 
 %files python
 %defattr(-,root,root,-)
