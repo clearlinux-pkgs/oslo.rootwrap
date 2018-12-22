@@ -1,6 +1,27 @@
 CHANGES
 =======
 
+5.15.1
+------
+
+* Update mailinglist from dev to discuss
+* Fix portability issue
+
+5.15.0
+------
+
+* Add release note for file descriptor limit change
+* Clean up .gitignore references to personal tools
+* Don't quote {posargs} in tox.ini
+* Run rootwrap with lower fd ulimit by default
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* import zuul job settings from project-config
+* Update reno for stable/rocky
+* Switch to stestr
+* Add release notes link to README
+* fix tox python3 overrides
+
 5.14.1
 ------
 
