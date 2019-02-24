@@ -6,7 +6,7 @@
 #
 Name     : oslo.rootwrap
 Version  : 5.15.1
-Release  : 51
+Release  : 52
 URL      : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.15.1.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.15.1.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.15.1.tar.gz.asc
@@ -17,18 +17,16 @@ Requires: oslo.rootwrap-bin = %{version}-%{release}
 Requires: oslo.rootwrap-license = %{version}-%{release}
 Requires: oslo.rootwrap-python = %{version}-%{release}
 Requires: oslo.rootwrap-python3 = %{version}-%{release}
-Requires: Sphinx
-Requires: fixtures
-Requires: openstackdocstheme
-Requires: python-mock
-Requires: reno
 Requires: six
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/oslo.rootwrap.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package bin
 Summary: bin components for the oslo.rootwrap package.
@@ -73,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1545509139
+export SOURCE_DATE_EPOCH=1551028369
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
