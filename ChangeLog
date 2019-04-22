@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+5.15.2
+------
+
+* add python 3.7 unit test job
+* Use template for lower-constraints
+
 5.15.1
 ------
 
