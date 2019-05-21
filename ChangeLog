@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+5.16.0
+------
+
+* Replace git.openstack.org URLs with opendev.org URLs
+* OpenDev Migration Patch
+* Dropping the py35 testing
+* Always close all passed in fds beyond sensible\_fd\_limit on launch
+* Update master for stable/stein
+* Update hacking version
+
 5.15.2
 ------
 
