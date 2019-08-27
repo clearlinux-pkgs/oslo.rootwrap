@@ -1,3 +1,0 @@
-# openstack Liberty needs version >= 2.0.0
-# for more information check https://github.com/openstack/requirements/blob/master/global-requirements.txt
-watchurl=http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-([\d.]*).tar.gz.*
