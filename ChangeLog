@@ -1,6 +1,21 @@
 CHANGES
 =======
 
+5.17.1
+------
+
+* reap rootwrap daemon process when it is timeout
+* tox: Keeping going with docs
+* Switch to Ussuri jobs
+* Bump the openstackdocstheme extension to 1.20
+* Sync Sphinx requirement
+* Update the constraints url
+
+5.17.0
+------
+
+* Update master for stable/train
+
 5.16.1
 ------
 
