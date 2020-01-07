@@ -6,7 +6,7 @@
 #
 Name     : oslo.rootwrap
 Version  : 5.17.1
-Release  : 59
+Release  : 60
 URL      : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.17.1.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.17.1.tar.gz
 Source1  : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-5.17.1.tar.gz.asc
