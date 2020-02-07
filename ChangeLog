@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+6.0.0
+-----
+
+* [ussuri][goal] Drop python 2.7 support and testing
+* tox: Trivial cleanup
+
 5.17.1
 ------
 
