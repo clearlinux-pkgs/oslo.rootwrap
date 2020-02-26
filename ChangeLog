@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+6.0.1
+-----
+
+* Implement "realpath" to retrieve the real absolute path
+* remove outdated header
+* Remove universal wheel configuration
+* reword releasenote for py27 support dropping
+
 6.0.0
 -----
 
