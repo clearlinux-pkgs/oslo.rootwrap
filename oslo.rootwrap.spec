@@ -6,7 +6,7 @@
 #
 Name     : oslo.rootwrap
 Version  : 6.0.1
-Release  : 62
+Release  : 63
 URL      : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-6.0.1.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-6.0.1.tar.gz
 Source1  : http://tarballs.openstack.org/oslo.rootwrap/oslo.rootwrap-6.0.1.tar.gz.asc
@@ -26,8 +26,32 @@ BuildRequires : six
 ========================
 Team and repository tags
 ========================
+
 .. image:: https://governance.openstack.org/tc/badges/oslo.rootwrap.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+    :target: https://governance.openstack.org/tc/reference/tags/index.html
+
+.. Change things from this point on
+
+===============================================
+ oslo.rootwrap -- Escalated Permission Control
+===============================================
+
+.. image:: https://img.shields.io/pypi/v/oslo.rootwrap.svg
+    :target: https://pypi.org/project/oslo.rootwrap/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/dm/oslo.rootwrap.svg
+    :target: https://pypi.org/project/oslo.rootwrap/
+    :alt: Downloads
+
+oslo.rootwrap allows fine-grained filtering of shell commands to run
+as `root` from OpenStack services.
+
+* License: Apache License, Version 2.0
+* Documentation: https://docs.openstack.org/oslo.rootwrap/latest/
+* Source: https://opendev.org/openstack/oslo.rootwrap
+* Bugs: https://bugs.launchpad.net/oslo.rootwrap
+* Release notes: https://docs.openstack.org/releasenotes/oslo.rootwrap/
 
 %package bin
 Summary: bin components for the oslo.rootwrap package.
@@ -59,6 +83,7 @@ python components for the oslo.rootwrap package.
 Summary: python3 components for the oslo.rootwrap package.
 Group: Default
 Requires: python3-core
+Provides: pypi(oslo.rootwrap)
 
 %description python3
 python3 components for the oslo.rootwrap package.
@@ -73,7 +98,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582741430
+export SOURCE_DATE_EPOCH=1583194703
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
