@@ -3,5 +3,3 @@ cinder
 glance_store
 ironic
 neutron
-nova
-sahara
