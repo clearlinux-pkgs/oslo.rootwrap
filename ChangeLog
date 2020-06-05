@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+6.1.0
+-----
+
+* Fix hacking min version to 3.0.1
+* Switch to newer openstackdocstheme and reno versions
+* Remove the unused coding style modules
+* Avoid raising a RuntimeError during the shutdown
+* Bump default tox env from py37 to py38
+* Add py38 package metadata
+* Add Python3 victoria unit tests
+* Update master for stable/ussuri
+* Update hacking for Python3
+
 6.0.2
 -----
 
