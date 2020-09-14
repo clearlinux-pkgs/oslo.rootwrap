@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+6.2.0
+-----
+
+* [goal] Migrate testing to ubuntu focal
+* Bump bandit version
+* Stop to use the \_\_future\_\_ module
+
 6.1.0
 -----
 
@@ -8,8 +15,10 @@ CHANGES
 * Switch to newer openstackdocstheme and reno versions
 * Remove the unused coding style modules
 * Avoid raising a RuntimeError during the shutdown
+* Align contributing doc with oslo's policy
 * Bump default tox env from py37 to py38
 * Add py38 package metadata
+* Add release notes links to doc index
 * Add Python3 victoria unit tests
 * Update master for stable/ussuri
 * Update hacking for Python3
